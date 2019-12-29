@@ -1,5 +1,4 @@
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
 public class ChromeTest {
@@ -7,7 +6,7 @@ public class ChromeTest {
 	@Test
 	public void chromeLaunchTest()
 	{
-		WebDriver driver =new ChromeDriver();
+		FirefoxDriver driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.facebook.com");
 	}
